@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Deals from './components/Deals';
-import Home from './components/Home';
-import Layout from './components/Layout';
-import Menu from './components/Menu';
+import Deals from './components/Deals/Deals';
+import Home from './components/Home/Home';
+import Layout from './components/Layout/Layout';
+import Menu from './components/Menu/Menu';
 import NotFound from './components/NotFound';
 
 function App() {
