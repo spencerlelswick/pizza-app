@@ -11,6 +11,21 @@ nav > ul > li {
   padding: 1rem;
 }
 
+nav > ul > li a {
+  color: tomato;
+  text-decoration: none;
+}
+
+nav > ul > li a:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+nav > ul > li a:visited {
+  color: tomato;
+  text-decoration: none;
+}
+
 .layout-container {
   margin: auto;
   width: 50%;

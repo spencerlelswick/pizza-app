@@ -1,0 +1,27 @@
+.menu-card {
+  border: gray 1px solid;
+  margin: 1rem;
+}
+
+.card-info-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.menu-quantity {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-quantity select {
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  padding-left: 1rem;
+}
+
+.menu-quantity Button {
+  width: 100%;
+}
