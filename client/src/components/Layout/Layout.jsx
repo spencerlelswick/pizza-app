@@ -1,4 +1,9 @@
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Link, Outlet } from "react-router-dom";
+
+
 import './Layout.css';
 
 const Layout = () => {
@@ -19,8 +24,9 @@ const Layout = () => {
                         </li>
                     </ul>
                 </nav>
-                <div>
-                    Cart
+                <div className='cart-container'>
+                    <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} /></Link>
+                    <p>$10.49</p>
                 </div>
             </div>
 
