@@ -1,13 +1,16 @@
-import Button from '../../Button/Button';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../../../features/cartSlice';
 import './MenuCard.css';
 
-const MenuCard = (props) => {
+const MenuCard = ({ id, title, price, image }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="menu-card">
       <div className="card-info-container">
         <div className="card-info">
-          <h3>{props.title}</h3>
-          <p>{props.price}</p>
+          <h3>{title}</h3>
+          <p>${price}</p>
           <div className="menu-quantity">
             <select>
               <option>1</option>
@@ -16,10 +19,24 @@ const MenuCard = (props) => {
               <option>4</option>
               <option>5</option>
             </select>
-            <Button text="Add To Order"></Button>
+            <button
+              className="primary-button"
+              onClick={() =>
+                dispatch(
+                  addItem({
+                    id,
+                    title,
+                    image,
+                    price,
+                  })
+                )
+              }
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
-        <img alt="pizza deal" src={props.img}></img>
+        <img alt="pizza deal" src={image}></img>
       </div>
     </div>
   );

@@ -1,4 +1,3 @@
-import Button from '../../Button/Button'
 import './DealCard.css'
 
 const DealCard = (props) => {
@@ -9,7 +8,7 @@ const DealCard = (props) => {
                 <div className='card-info'>
                     <h3>{props.title}</h3>      
                     <p>{props.price}</p>
-                    <Button text="Add To Order"></Button>    
+                    <button className='primary-button'>Add To Order</button>    
                 </div>
                 <img alt='pizza deal' src={props.img}></img>
             </div>

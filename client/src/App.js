@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Deals from './components/Deals/Deals';
 import Home from './components/Home/Home';
 import Layout from './components/Layout/Layout';
@@ -14,6 +15,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="deals" element={<Deals />} />
           <Route path="menu" element={<Menu />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
