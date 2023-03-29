@@ -9,4 +9,6 @@
 .cart-item__price {
 }
 .cart-item__quantity {
+  display: flex;
+  flex-direction: row;
 }

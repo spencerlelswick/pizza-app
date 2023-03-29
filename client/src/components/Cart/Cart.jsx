@@ -13,16 +13,17 @@ export const Cart = () => {
 
     const getCartTotal = () => {
         let runningTotal = 0
-        cart?.map((item) => {
+
+        cart.forEach(item => {
             runningTotal += (Number(item.price) * item.quantity)
-            return runningTotal.toFixed(2)
-        })
+        });
+        return runningTotal.toFixed(2)
         
     }
 
     return(
         <div>
-            <h3>${getCartTotal() || 0 }</h3>
+            <h3>Your total is: ${getCartTotal() || 0 }</h3>
             
             {cart?.map((item) => (
                     <CartItem
